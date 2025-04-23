@@ -1,0 +1,31 @@
+.video-card {
+  background-color: #2a2a2a; /* Slightly lighter than page background */
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 100%; /* Take full width of grid column */
+  box-sizing: border-box;
+}
+
+.video-card:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.video-card-thumbnail-placeholder {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background-color: #444; /* Dark grey placeholder */
+  /* In the future, replace with background-image: url(...) */
+}
+
+.video-card-title {
+  margin: 0.75rem;
+  font-size: 1rem;
+  color: #e0e0e0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for long titles */
+} 

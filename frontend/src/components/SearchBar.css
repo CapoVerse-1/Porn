@@ -1,0 +1,52 @@
+.search-bar-form {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0; /* Add some space above and below */
+  width: 100%;
+  max-width: 600px; /* Limit max width */
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  border: 1px solid #444; /* Darker border */
+  border-radius: 25px 0 0 25px; /* Rounded left side */
+  background-color: #333; /* Dark input background */
+  color: #e0e0e0; /* Light text */
+  outline: none;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.search-input::placeholder {
+  color: #888; /* Lighter placeholder text */
+}
+
+.search-input:focus {
+  border-color: #f9a825; /* Highlight color on focus - using a shade of orange/yellow like the reference */
+  box-shadow: 0 0 0 2px rgba(249, 168, 37, 0.3);
+}
+
+.search-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border: 1px solid #f9a825; /* Button border color */
+  border-left: none; /* Remove left border to merge with input */
+  border-radius: 0 25px 25px 0; /* Rounded right side */
+  background-color: #f9a825; /* Button background color */
+  color: #1a1a1a; /* Dark text on button */
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: #fbc02d; /* Lighter shade on hover */
+  border-color: #fbc02d;
+}
+
+.search-button:active {
+  background-color: #f57f17; /* Darker shade on click */
+  border-color: #f57f17;
+} 
