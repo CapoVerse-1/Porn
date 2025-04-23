@@ -8,8 +8,5 @@
         "distDir": "build" 
       }
     }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/frontend/index.html" }
   ]
 } 
