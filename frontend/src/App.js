@@ -23,9 +23,14 @@ function App() {
       <h1>Generate Your Scene</h1>
       <SearchBar onSearch={handleSearch} />
 
-      {results.length > 0 ? (
-        <ResultsGrid results={results} />
-      ) : (
+      {results.length > 0 && (
+        <div style={{ marginTop: '2rem', width: '100%', maxWidth: '1200px' }}>
+          <h2 style={{ marginBottom: '1rem' }}>Results for: "{searchQuery}"</h2>
+          <ResultsGrid results={results} />
+        </div>
+      )}
+
+      {results.length === 0 && (
         <p style={{ marginTop: '2rem' }}>Enter a description above to generate videos.</p>
       )}
     </div>
